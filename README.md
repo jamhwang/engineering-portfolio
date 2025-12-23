@@ -1,68 +1,97 @@
-# Engineering Portfolio
+# Engineering Portfolio — James Hwang
 
-Production-style engineering projects focused on cloud automation, endpoint management, and security operations.
+This repository serves as a curated portfolio of **production-style engineering projects** focused on
+cloud infrastructure, endpoint operations, automation, and security-adjacent tooling.
 
-This repository serves as a curated portfolio of practical, hands-on work that reflects real-world operational scenarios rather than academic exercises. Projects emphasize reliability, automation, and clear problem-solving approaches commonly used in enterprise environments.
+The goal of this portfolio is to demonstrate:
+- How I structure real-world projects
+- How I think about operational reliability and auditability
+- How I design tooling that is testable, maintainable, and automation-friendly
 
----
-
-## Focus Areas
-
-- **Cloud Automation**
-  - AWS EC2, IAM, Systems Manager (SSM)
-  - Infrastructure and operational task automation
-  - Least-privilege access and observability
-
-- **Endpoint Management**
-  - Windows and macOS endpoint lifecycle workflows
-  - Configuration, provisioning, and remediation automation
-  - Policy enforcement concepts (Intune, Jamf, GPO)
-
-- **Security Operations**
-  - Endpoint security triage and response workflows
-  - Detection, validation, and remediation playbooks
-  - Operational support aligned with Tier-2 / Tier-3 environments
+Each linked repository is self-contained and runnable, with clear documentation.
 
 ---
 
-## Featured Projects
+## Core Focus Areas
 
-### 🔹 AWS Systems Manager Automation Toolkit
-**Technologies:** AWS EC2, SSM, IAM, Python  
-Automated common operational tasks, including remote command execution, inventory collection, and patch workflows. Designed with least-privilege IAM roles and a focus on reducing manual intervention across distributed environments.
-
----
-
-### 🔹 Endpoint Provisioning & Remediation Automation
-**Technologies:** PowerShell, Windows, AWS SSM  
-Built automation workflows to standardize endpoint setup and remediation steps. Reduced manual configuration effort and improved consistency across endpoint deployments.
+- Cloud & Infrastructure Operations
+- Endpoint & Fleet Management
+- Automation (PowerShell, AWS tooling)
+- Security-aware operational design
+- Testable, repeatable workflows
 
 ---
 
-### 🔹 Endpoint Security Response Playbooks
-**Technologies:** CrowdStrike Falcon, PowerShell  
-Documented and automated response workflows for common endpoint security scenarios, including detection triage, containment validation, and remediation steps. Focused on clarity and repeatability for operational support teams.
+## Projects
+
+### 🔹 AWS SSM Fleet Ops Toolkit (PowerShell)
+**Repository:**  
+https://github.com/jamhwang/aws-ssm-fleet-ops-ps
+
+**Summary:**  
+Production-style PowerShell tooling modeled after AWS Systems Manager (SSM) Run Command workflows.
+Demonstrates fleet targeting, command execution tracking, and audit-friendly result exports.
+
+**Key concepts demonstrated:**
+- Tag-based fleet targeting
+- Separation of module logic vs. CLI entrypoints
+- Mock backend for local testing (no AWS account required)
+- JSON/CSV export of operational artifacts
+- Pester tests validating behavior
+
+**Why this matters:**  
+Fleet operations are a common failure point in large environments. This project shows a structured,
+auditable approach rather than ad-hoc scripting.
 
 ---
 
-## Design Principles
+## Design Philosophy
 
-- Production-minded, not demo-driven
-- Clear problem statements and scope
-- Minimal dependencies and explicit assumptions
-- Emphasis on maintainability and operational clarity
+Across all projects in this portfolio, I prioritize:
+
+- **Clarity over cleverness**  
+  Code should be readable and explainable under review.
+
+- **Operational realism**  
+  Projects mirror how tools are actually used in production environments.
+
+- **Testability**  
+  Mock modes and tests are included where possible.
+
+- **Auditability**  
+  Outputs are structured, exportable, and review-friendly.
+
+---
+
+## How to Review These Projects
+
+Each project repository includes:
+- A README with context and usage examples
+- A clear folder structure
+- Runnable demos or mock workflows
+- Notes on planned extensions or production considerations
+
+Reviewers are encouraged to:
+- Skim the README
+- Run the demo commands
+- Inspect the module / core logic
 
 ---
 
 ## About Me
 
-I’m a Cloud & Endpoint Engineer with over 4 years of enterprise IT experience supporting large-scale environments. My background includes automation, endpoint operations, and security tooling in production settings. I’m currently pursuing a B.S. in Cloud Computing and building toward cloud, platform, and security engineering roles.
+I am an engineer with experience in:
+- Enterprise endpoint and fleet operations
+- Cloud infrastructure and automation
+- Security tooling and operational support
+- PowerShell-based automation in production environments
 
-- **GitHub:** https://github.com/jamhwang
-- **LinkedIn:** (add your LinkedIn URL)
+This portfolio reflects **how I work**, not just what I can build in isolation.
 
 ---
 
-## Notes
+## Contact
 
-This repository will continue to evolve as new projects are added and existing implementations are refined. Feedback and discussion are welcome.
+- GitHub: https://github.com/jamhwang
+- LinkedIn: *(add your LinkedIn URL here)*
+
