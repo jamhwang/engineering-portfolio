@@ -47,7 +47,7 @@ Fleet operations commonly degrade into ad-hoc scripts and inconsistent logging. 
 ---
 
 ### Network Diagnostics Automation (Windows / PowerShell)
-**Repository:** [network-diagnostics-automation](https://github.com/jamhwang/<repo-name>)  
+**Repository:** [network-diagnostics-automation]([https://github.com/jamhwang/<repo-name>](https://github.com/jamhwang/network-troubleshooting-scripts))  
 **Status:** Planned / In Progress
 
 **Summary:**  
