@@ -1,115 +1,104 @@
 # Engineering Portfolio — James Hwang
 
-This repository serves as a curated portfolio of **production-style engineering projects** focused on cloud infrastructure, endpoint operations, automation, and security-aware tooling.
+Curated portfolio of **production-style engineering projects** focused on cloud infrastructure, endpoint operations, automation, and security-aware operational tooling.
 
-The intent is to demonstrate how I design and structure real-world operational tooling — with an emphasis on reliability, auditability, and maintainability — rather than isolated demos or one-off scripts.
+These repositories are designed to be **reviewable and runnable** (locally or via mock modes where applicable), and to demonstrate how I structure tools intended for real operational use — not one-off scripts.
 
 ---
 
-## Scope & Focus
+## Contents
+- [Focus Areas](#focus-areas)
+- [Projects](#projects)
+- [Design Principles](#design-principles)
+- [How to Review](#how-to-review)
+- [Contact](#contact)
 
-Projects in this portfolio emphasize:
+---
 
-* Cloud & infrastructure operations
-* Endpoint and fleet management
-* Automation using PowerShell and AWS tooling
-* Security-aware operational design
-* Testable, repeatable workflows
+## Focus Areas
 
-Each linked repository is self-contained, documented, and runnable (locally or in mock mode where applicable).
+- Cloud & Infrastructure Operations
+- Endpoint & Fleet Management
+- Automation (PowerShell, AWS tooling)
+- Security-aware operational design (auditability, safe defaults)
+- Testable, repeatable workflows
 
 ---
 
 ## Projects
 
 ### AWS SSM Fleet Ops Toolkit (PowerShell)
+**Repository:** [aws-ssm-fleet-ops-ps](https://github.com/jamhwang/aws-ssm-fleet-ops-ps)  
+**Status:** Active
 
-**Repository:**
-[https://github.com/jamhwang/aws-ssm-fleet-ops-ps](https://github.com/jamhwang/aws-ssm-fleet-ops-ps)
-
-**Summary:**
+**Summary:**  
 Production-style PowerShell tooling modeled after AWS Systems Manager (SSM) Run Command workflows. Demonstrates structured fleet targeting, command execution tracking, and audit-friendly result exports.
 
-**Key concepts demonstrated:**
+**Key concepts:**
+- Tag-based fleet targeting
+- Separation of core module logic and CLI entry points
+- Mock backend for local execution without an AWS account
+- JSON/CSV export of operational artifacts
+- Pester tests validating expected behavior
 
-* Tag-based fleet targeting
-* Separation of core module logic and CLI entry points
-* Mock backend for local execution without an AWS account
-* JSON/CSV export of operational artifacts
-* Pester tests validating expected behavior
-
-**Why this matters:**
-Fleet operations are a common failure point in large environments. This project demonstrates a structured, auditable approach to fleet-scale operations rather than ad-hoc scripting.
+**Why this matters:**  
+Fleet operations commonly degrade into ad-hoc scripts and inconsistent logging. This project demonstrates a structured, auditable approach designed for operational reliability.
 
 ---
 
-### Network Diagnostics Automation (PowerShell)
+### Network Diagnostics Automation (Windows / PowerShell)
+**Repository:** [network-diagnostics-automation](https://github.com/jamhwang/<repo-name>)  
+**Status:** Planned / In Progress
 
-**Repository:**
-[https://github.com/jamhwang/](https://github.com/jamhwang/)<repo-name>
+**Summary:**  
+Reusable **Windows-focused** PowerShell network diagnostics toolkit designed to standardize first-response troubleshooting on enterprise Windows endpoints.
 
-**Summary:**
-Reusable PowerShell-based network diagnostics toolkit designed to standardize first-response troubleshooting in enterprise endpoint environments.
+Automates collection of Windows network state including IP configuration, DNS resolution, and gateway/external reachability, exporting structured logs suitable for escalation and audit.
 
-Automates collection of IP configuration, DNS resolution, and gateway/external reachability checks, exporting structured logs suitable for escalation and audit.
+**Key concepts:**
+- Deterministic, repeatable diagnostics for first-response operations
+- Native Windows networking cmdlets (Get-NetIPConfiguration, Test-NetConnection)
+- Structured output (CSV/JSON/logs) for escalation workflows
+- Parameterized execution paths (diagnostics vs guided remediation)
+- Designed for use by non-engineers without sacrificing rigor
 
-**Key concepts demonstrated:**
-
-* Deterministic, repeatable diagnostics for first-response operations
-* Structured output (CSV/JSON/logs) for escalation workflows
-* Parameterized execution paths (diagnostics vs. guided remediation)
-* Designed for use by non-engineers without sacrificing rigor
-
-**Why this matters:**
-Inconsistent first-response diagnostics lead to noisy escalations and delayed resolution. This project shows how lightweight automation can improve signal quality and operational reliability at the edge.
+**Why this matters:**  
+Inconsistent first-response diagnostics create noisy escalations and slower resolution. This project focuses on improving operational signal quality at the endpoint layer.
 
 ---
 
 ## Design Principles
 
-Across all projects, I prioritize:
+- **Clarity over cleverness**  
+  Code should be readable and explainable under review.
 
-* **Clarity over cleverness** — code should be readable and reviewable
-* **Operational realism** — workflows reflect production usage
-* **Testability** — mock modes and tests are included where practical
-* **Auditability** — outputs are structured, exportable, and review-friendly
+- **Operational realism**  
+  Workflows mirror how tools are used in production environments.
+
+- **Testability**  
+  Mock modes and tests are included where practical.
+
+- **Auditability**  
+  Outputs are structured, exportable, and review-friendly.
 
 ---
 
 ## How to Review
 
 Each project repository includes:
+- Context and usage examples in the README
+- A clear folder structure
+- Runnable demos or mock workflows
+- Notes on tradeoffs and planned extensions
 
-* A README with context and usage examples
-* A clear folder structure
-* Runnable demos or mock workflows
-* Notes on design tradeoffs and potential extensions
-
-Reviewers can:
-
-1. Read the project README
-2. Run the demo or mock workflow
-3. Inspect the core module logic
-
----
-
-## About
-
-I have experience in:
-
-* Enterprise endpoint and fleet operations
-* Cloud infrastructure and automation
-* Security tooling and operational support
-* PowerShell automation in production environments
-
-This portfolio reflects **how I approach engineering problems**, not just final outputs.
+Suggested review flow:
+1. Read the README and run the mock or demo workflow
+2. Inspect the core module logic (functions, parameterization, error handling)
+3. Review exported artifacts (reports/logs) for auditability
 
 ---
 
 ## Contact
 
-* GitHub: [https://github.com/jamhwang](https://github.com/jamhwang)
-* LinkedIn: [https://linkedin.com/in/]([https://linkedin.com/in/](https://www.linkedin.com/in/james-h-02b904103/))
-
----
-
+- GitHub: [github.com/jamhwang](https://github.com/jamhwang)  
+- LinkedIn: https://www.linkedin.com/in/james-h-02b904103/
