@@ -1,97 +1,115 @@
 # Engineering Portfolio — James Hwang
 
-This repository serves as a curated portfolio of **production-style engineering projects** focused on
-cloud infrastructure, endpoint operations, automation, and security-adjacent tooling.
+This repository serves as a curated portfolio of **production-style engineering projects** focused on cloud infrastructure, endpoint operations, automation, and security-aware tooling.
 
-The goal of this portfolio is to demonstrate:
-- How I structure real-world projects
-- How I think about operational reliability and auditability
-- How I design tooling that is testable, maintainable, and automation-friendly
-
-Each linked repository is self-contained and runnable, with clear documentation.
+The intent is to demonstrate how I design and structure real-world operational tooling — with an emphasis on reliability, auditability, and maintainability — rather than isolated demos or one-off scripts.
 
 ---
 
-## Core Focus Areas
+## Scope & Focus
 
-- Cloud & Infrastructure Operations
-- Endpoint & Fleet Management
-- Automation (PowerShell, AWS tooling)
-- Security-aware operational design
-- Testable, repeatable workflows
+Projects in this portfolio emphasize:
+
+* Cloud & infrastructure operations
+* Endpoint and fleet management
+* Automation using PowerShell and AWS tooling
+* Security-aware operational design
+* Testable, repeatable workflows
+
+Each linked repository is self-contained, documented, and runnable (locally or in mock mode where applicable).
 
 ---
 
 ## Projects
 
-### 🔹 AWS SSM Fleet Ops Toolkit (PowerShell)
-**Repository:**  
-https://github.com/jamhwang/aws-ssm-fleet-ops-ps
+### AWS SSM Fleet Ops Toolkit (PowerShell)
 
-**Summary:**  
-Production-style PowerShell tooling modeled after AWS Systems Manager (SSM) Run Command workflows.
-Demonstrates fleet targeting, command execution tracking, and audit-friendly result exports.
+**Repository:**
+[https://github.com/jamhwang/aws-ssm-fleet-ops-ps](https://github.com/jamhwang/aws-ssm-fleet-ops-ps)
+
+**Summary:**
+Production-style PowerShell tooling modeled after AWS Systems Manager (SSM) Run Command workflows. Demonstrates structured fleet targeting, command execution tracking, and audit-friendly result exports.
 
 **Key concepts demonstrated:**
-- Tag-based fleet targeting
-- Separation of module logic vs. CLI entrypoints
-- Mock backend for local testing (no AWS account required)
-- JSON/CSV export of operational artifacts
-- Pester tests validating behavior
 
-**Why this matters:**  
-Fleet operations are a common failure point in large environments. This project shows a structured,
-auditable approach rather than ad-hoc scripting.
+* Tag-based fleet targeting
+* Separation of core module logic and CLI entry points
+* Mock backend for local execution without an AWS account
+* JSON/CSV export of operational artifacts
+* Pester tests validating expected behavior
 
----
-
-## Design Philosophy
-
-Across all projects in this portfolio, I prioritize:
-
-- **Clarity over cleverness**  
-  Code should be readable and explainable under review.
-
-- **Operational realism**  
-  Projects mirror how tools are actually used in production environments.
-
-- **Testability**  
-  Mock modes and tests are included where possible.
-
-- **Auditability**  
-  Outputs are structured, exportable, and review-friendly.
+**Why this matters:**
+Fleet operations are a common failure point in large environments. This project demonstrates a structured, auditable approach to fleet-scale operations rather than ad-hoc scripting.
 
 ---
 
-## How to Review These Projects
+### Network Diagnostics Automation (PowerShell)
+
+**Repository:**
+[https://github.com/jamhwang/](https://github.com/jamhwang/)<repo-name>
+
+**Summary:**
+Reusable PowerShell-based network diagnostics toolkit designed to standardize first-response troubleshooting in enterprise endpoint environments.
+
+Automates collection of IP configuration, DNS resolution, and gateway/external reachability checks, exporting structured logs suitable for escalation and audit.
+
+**Key concepts demonstrated:**
+
+* Deterministic, repeatable diagnostics for first-response operations
+* Structured output (CSV/JSON/logs) for escalation workflows
+* Parameterized execution paths (diagnostics vs. guided remediation)
+* Designed for use by non-engineers without sacrificing rigor
+
+**Why this matters:**
+Inconsistent first-response diagnostics lead to noisy escalations and delayed resolution. This project shows how lightweight automation can improve signal quality and operational reliability at the edge.
+
+---
+
+## Design Principles
+
+Across all projects, I prioritize:
+
+* **Clarity over cleverness** — code should be readable and reviewable
+* **Operational realism** — workflows reflect production usage
+* **Testability** — mock modes and tests are included where practical
+* **Auditability** — outputs are structured, exportable, and review-friendly
+
+---
+
+## How to Review
 
 Each project repository includes:
-- A README with context and usage examples
-- A clear folder structure
-- Runnable demos or mock workflows
-- Notes on planned extensions or production considerations
 
-Reviewers are encouraged to:
-- Skim the README
-- Run the demo commands
-- Inspect the module / core logic
+* A README with context and usage examples
+* A clear folder structure
+* Runnable demos or mock workflows
+* Notes on design tradeoffs and potential extensions
+
+Reviewers can:
+
+1. Read the project README
+2. Run the demo or mock workflow
+3. Inspect the core module logic
 
 ---
 
-## About Me
+## About
 
-I am an engineer with experience in:
-- Enterprise endpoint and fleet operations
-- Cloud infrastructure and automation
-- Security tooling and operational support
-- PowerShell-based automation in production environments
+I have experience in:
 
-This portfolio reflects **how I work**, not just what I can build in isolation.
+* Enterprise endpoint and fleet operations
+* Cloud infrastructure and automation
+* Security tooling and operational support
+* PowerShell automation in production environments
+
+This portfolio reflects **how I approach engineering problems**, not just final outputs.
 
 ---
 
 ## Contact
 
-- GitHub: https://github.com/jamhwang
-- LinkedIn: *(add your LinkedIn URL here)*
+* GitHub: [https://github.com/jamhwang](https://github.com/jamhwang)
+* LinkedIn: [https://linkedin.com/in/]([https://linkedin.com/in/](https://www.linkedin.com/in/james-h-02b904103/))
+
+---
 
