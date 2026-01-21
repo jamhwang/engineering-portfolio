@@ -6,6 +6,9 @@ IT operations, automation, and security-aware operational tooling.
 These repositories are designed to be **reviewable and runnable**, and to demonstrate how I
 structure tools intended for real operational use — not one-off scripts or labs.
 
+**Author:** James Hwang — IT Systems & Cloud Support Engineer  
+4+ years of enterprise experience building and supporting operational tooling across endpoint, cloud, and automation workflows. Focused on creating reliable, auditable, and production-ready solutions for real operational environments.
+
 ---
 
 ## Contents
