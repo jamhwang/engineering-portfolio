@@ -7,8 +7,7 @@ These repositories are designed to be **reviewable and runnable**, and to demons
 structure tools intended for real operational use — not one-off scripts or labs.
 
 **Author:** James Hwang — IT Systems & Cloud Support Engineer  
-4+ years of enterprise experience building and supporting operational tooling across endpoint, cloud, and automation workflows. Focused on creating reliable, auditable, and production-ready solutions for real operational environments.
-
+4+ years of enterprise experience supporting production platforms, operational tooling, cloud infrastructure, and automation workflows. Focused on building reliable, auditable, and operationally realistic solutions for troubleshooting, diagnostics, and support engineering environments.
 ---
 
 ## Contents
@@ -24,6 +23,7 @@ structure tools intended for real operational use — not one-off scripts or lab
 
 - Cloud & Infrastructure Operations (AWS)
 - IT Operations & Endpoint Diagnostics
+- Platform Operations & Production Diagnostics
 - Automation (PowerShell, AWS tooling)
 - Security-aware operational design (auditability, safe defaults)
 - Testable, repeatable workflows
